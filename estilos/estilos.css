@@ -23,11 +23,19 @@ header {
     background-size: cover;
     background-blend-mode: overlay;
 }
+
 header h1 {
     font-size: 3em;
     margin: 0;
     /* Efecto de texto inspirado en El Señor de los Anillos */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header img.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrar el logo horizontalmente */
 }
 
 main {
@@ -39,6 +47,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to right, #3498db, #9b59b6, #f1c40f); /* Gradiente de fondo */
+    margin-bottom: 80px; 
 }
 
 section {
@@ -114,6 +123,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 15px;
 }
 
 /* Efectos para formularios */
