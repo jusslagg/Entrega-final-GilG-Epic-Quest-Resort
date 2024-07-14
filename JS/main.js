@@ -58,19 +58,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Validar capacidad máxima según tipo de habitación
-        if (tipoHabitacion === 'individual' && numPersonas > 1) {
-            mostrarError('La habitación individual solo permite 1 persona.');
-            return;
-        }
-
-        if (tipoHabitacion === 'doble' && numPersonas > 4) {
-            mostrarError('La habitación doble permite máximo 4 personas.');
-            return;
-        }
-
-        if (tipoHabitacion === 'matrimonial' && numPersonas > 2) {
-            mostrarError('La habitación matrimonial permite máximo 2 personas.');
-            return;
+        switch (tipoHabitacion) {
+            case 'Harry Potter':
+                if (numPersonas > 2) {
+                    mostrarError('La habitación Harry Potter solo permite 2 personas.');
+                    return;
+                }
+                break;
+            case 'House of Dragon':
+                if (numPersonas > 2) {
+                    mostrarError('La habitación House of Dragon solo permite 2 personas.');
+                    return;
+                }
+                break;
+            case 'Lord of the Rings':
+                if (numPersonas > 4) {
+                    mostrarError('La habitación Lord of the Rings permite máximo 4 personas.');
+                    return;
+                }
+                break;
+            case 'StarWars':
+                if (numPersonas > 4) {
+                    mostrarError('La habitación StarWars permite máximo 4 personas.');
+                    return;
+                }
+                break;
+            default:
+                break;
         }
 
         // Calcular costo total
@@ -87,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Mostrar la última reserva realizada en SweetAlert2
-        mostrarConfirmacion(nombre, tipoHabitacion, numNoches, numPersonas, costoTotal, tieneDesayuno, tieneCena);
+        mostrarConfirmacion(nombre, obtenerNombreCompletoHabitacion(tipoHabitacion), numNoches, numPersonas, costoTotal, tieneDesayuno, tieneCena);
 
         // Guardar la reserva en localStorage
         guardarReservaLocalStorage(nombre, tipoHabitacion, numNoches, numPersonas, costoTotal, tieneDesayuno, tieneCena);
@@ -104,12 +118,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function obtenerCostoPorNoche(tipo) {
         switch (tipo) {
-            case 'individual':
-                return 100;
-            case 'doble':
-                return 150;
-            case 'matrimonial':
-                return 200;
+            case 'Harry Potter':
+                return 50000;
+            case 'House of Dragon':
+                return 55000;
+            case 'Lord of the Rings':
+                return 40000;
+            case 'StarWars':
+                return 60000;
             default:
                 return 0;
         }
@@ -168,9 +184,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         reservas.forEach(function (reserva, index) {
             const li = document.createElement('li');
-            li.innerHTML = `Reserva ${index + 1}: ${reserva.nombre} - ${reserva.tipoHabitacion} - ${reserva.numNoches} noches - ${reserva.numPersonas} personas - Total: $${reserva.costoTotal}`;
+            li.innerHTML = `Reserva ${index + 1}: ${reserva.nombre} - ${obtenerNombreCompletoHabitacion(reserva.tipoHabitacion)} - ${reserva.numNoches} noches - ${reserva.numPersonas} personas - Total: $${reserva.costoTotal}`;
             listaReservasUl.appendChild(li);
         });
+    }
+
+    function obtenerNombreCompletoHabitacion(tipo) {
+        switch (tipo) {
+            case 'Harry Potter':
+                return 'Habitación Harry Potter';
+            case 'House of Dragon':
+                return 'Habitación House of Dragon';
+            case 'Lord of the Rings':
+                return 'Habitación Lord of the Rings';
+            case 'StarWars':
+                return 'Habitación StarWars';
+            default:
+                return tipo;
+        }
     }
 
     function mostrarError(mensaje) {
