@@ -31,7 +31,7 @@ header h1 {
 }
 
 header img.logo {
-    max-width: 50%;
+    max-width: 30vh;
     height: auto;
     display: block;
     margin: 0 auto; /* Centrar el logo horizontalmente */
