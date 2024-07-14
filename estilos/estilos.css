@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    background: linear-gradient(to bottom, #0c0f1a, #221875); /* Gradiente de fondo */
+    color: #fff; /* Color de texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    margin: 0; /* Eliminar márgenes por defecto del body */
+    padding: 0; /* Eliminar relleno por defecto del body */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #3498db, #9b59b6, #f1c40f); /* Gradiente de fondo */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #221875;
+}
+
+form {
+    max-width: 600px;
+    color: #221875;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #221875;
+}
+
+/* Estilos para checkboxes */
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Efectos para formularios */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Efectos para botones */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Efectos para mensajes de error */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Contenedor principal del slider */
+.container {
+    max-width: 100%; /* Ancho máximo del slider ajustado al 100% */
+    margin: 20px auto; /* Margen exterior para centrar el contenedor */
+    padding: 10px;
+}
+
+/* Estilos para cada columna */
+.col-lg-4 {
+    margin-bottom: 10px; /* Separación de 10px entre cada columna */
+}
+
+/* Estilos para el swiper */
+.swiper {
+    width: 100%; /* Ajuste del ancho del swiper */
+    height: 300px; /* Altura deseada del swiper */
+}
+
+.swiper-slide {
+    background-color: #f8f8f8; /* Color de fondo de las diapositivas */
+    border-radius: 10px; /* Borde redondeado para las diapositivas */
+    overflow: hidden; /* Ocultar contenido que se desborde */
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%; /* Ajuste para que las imágenes ocupen todo el espacio de las diapositivas */
+    height: 100%; /* Ajuste para que las imágenes ocupen todo el espacio de las diapositivas */
+    object-fit: cover; /* Ajuste para mantener la relación de aspecto */
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el botón de reservar */
+.reservar-btn {
+    display: block; /* Hacer que el botón ocupe todo el ancho disponible */
+    width: 100%; /* Ancho completo del botón */
+    max-width: 200px; /* Ancho máximo del botón para mantenerlo legible */
+    margin: 0 auto 10px; /* Centrar el botón horizontalmente y agregar separación inferior de 10px */
+    padding: 10px 20px; /* Relleno interno del botón */
+    background: linear-gradient(to right, #3498db, #9b59b6, #f1c40f); /* Gradiente de fondo */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño de fuente */
+    text-align: center; /* Alinear texto al centro */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.reservar-btn:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+.formulario-section {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 10;
+    padding: 20px;
+}
+.formulario-section.active {
+    transform: translateX(0);
+    opacity: 1;
+}
