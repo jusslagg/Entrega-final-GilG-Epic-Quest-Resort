@@ -13,10 +13,21 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* Efecto de fondo inspirado en Star Wars */
+    background-image: url('star-wars-background.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+}
 header h1 {
+    font-size: 3em;
     margin: 0;
-    font-size: 2rem;
+    /* Efecto de texto inspirado en El Señor de los Anillos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -216,3 +227,10 @@ footer {
     transform: translateX(0);
     opacity: 1;
 }
+#news-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
