@@ -213,3 +213,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+function seleccionarHabitacion(tipo) {
+    // Seleccionar el tipo de habitación en el formulario
+    document.getElementById('tipoHabitacion').value = tipo;
+    
+    // Hacer scroll hasta el formulario
+    document.getElementById('reservaForm').scrollIntoView({ behavior: 'smooth' });
+}

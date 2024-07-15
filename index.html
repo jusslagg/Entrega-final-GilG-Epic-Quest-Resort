@@ -20,139 +20,137 @@
         <h1>Epic Quest Resort</h1>
         <img class="logo" src="./img/logo_hotel-removebg-preview.png" alt="logo">
     </header>
-    <body>
-        <div class="container">
-            <h1>Clima en Buenos Aires</h1>
-            <div class="weather-info">
-                <p>Cargando...</p>
+
+    <section class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Columna 1 -->
+            <div class="col">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/hp2.png" alt="Hp2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/hp3.png" alt="Hp3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/hp4.png" alt="Hp4">
+                        </div>
+                    </div>
+                </div>
+                <button class="reservar-btn" data-target="formulario-section1"
+                    onclick="seleccionarHabitacion('Harry Potter')">Harry Potter $50,000/noche</button>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/dragon 2.png" alt="dragon2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/house of dragons.jpeg" alt="House of Dragons">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/dragon 3.png" alt="Dragon 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/dragon 4.png" alt="dragon 4">
+                        </div>
+                    </div>
+                </div>
+                <button class="reservar-btn" data-target="formulario-section2"
+                    onclick="seleccionarHabitacion('House of Dragons')">House of Dragons $55,000/noche</button>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/lor4.png" alt="ring1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/lor3.png" alt="House of Dragons">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/lord of the rings.jpeg" alt="Lord of the Rings">
+                        </div>
+                    </div>
+                </div>
+                <button class="reservar-btn" data-target="formulario-section3"
+                    onclick="seleccionarHabitacion('Lord of the Rings')">Lord of the Rings $40,000/noche</button>
+            </div>
+            <!-- Columna 4 -->
+            <div class="col">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/sw1.png" alt="wars1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/sw2.png" alt="wars2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/sw3.png" alt="wars3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/sw4.png" alt="wars4">
+                        </div>
+                    </div>
+                </div>
+                <button class="reservar-btn" data-target="formulario-section4"
+                    onclick="seleccionarHabitacion('StarWars')">StarWars $60,000/noche</button>
             </div>
         </div>
-        <section class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                <!-- Columna 1 -->
-                <div class="col">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/hp2.png" alt="Hp2">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/hp3.png" alt="Hp3">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/hp4.png" alt="Hp4">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="reservar-btn" data-target="formulario-section1">Harry Potter $50,000/noche</button>
-                </div>
-                <!-- Columna 2 -->
-                <div class="col">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/dragon 2.png" alt="dragon2">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/house of dragons.jpeg" alt="House of Dragons">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/dragon 3.png" alt="Dragon 3">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/dragon 4.png" alt="dragon 4">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="reservar-btn" data-target="formulario-section2">House of Dragons $55,000/noche</button>
-                </div>
-                <!-- Columna 3 -->
-                <div class="col">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/lor4.png" alt="ring1">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/lor3.png" alt="House of Dragons">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/lord of the rings.jpeg" alt="Lord of the Rings">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="reservar-btn" data-target="formulario-section3">Lord of the Rings $40,000/noche</button>
-                </div>
-                <!-- Columna 4 -->
-                <div class="col">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/sw1.png" alt="wars1">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/sw2.png" alt="wars2">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/sw3.png" alt="wars3">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/sw4.png" alt="wars4">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="reservar-btn" data-target="formulario-section4">StarWars $60,000/noche</button>
-                </div>
+    </section>
+
+    <main>
+        <h2>Realiza tu Reserva</h2>
+        <form id="reservaForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="form-control" required>
             </div>
+            <div class="form-group">
+                <label for="tipoHabitacion">Tipo de Habitación:</label>
+                <select id="tipoHabitacion" class="form-control" required>
+                    <option value="">Selecciona...</option>
+                    <option value="Harry Potter">Harry Potter</option>
+                    <option value="House of Dragon">House of Dragons</option>
+                    <option value="Lord of the Rings">Lord of the Rings</option>
+                    <option value="StarWars">StarWars</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numNoches">Número de Noches:</label>
+                <input type="number" id="numNoches" class="form-control" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="numPersonas">Número de Personas:</label>
+                <input type="number" id="numPersonas" class="form-control" min="1" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="desayuno">
+                <label for="desayuno">Agregar Desayuno ($5,000 por noche)</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="cena">
+                <label for="cena">Agregar Cena ($10,000 por noche)</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular Costo</button>
+        </form>
+
+        <section id="resultado-section">
+            <h2>Última Reserva Realizada</h2>
+            <div id="ultimaReserva"></div>
         </section>
 
-        <main>
-            <h2>Realiza tu Reserva</h2>
-            <form id="reservaForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="tipoHabitacion">Tipo de Habitación:</label>
-                    <select id="tipoHabitacion" class="form-control" required>
-                        <option value="">Selecciona...</option>
-                        <option value="Harry Potter">Harry Potter</option>
-                        <option value="House of Dragon">House of Dragon</option>
-                        <option value="Lord of the Rings">Lord of the Rings</option>
-                        <option value="StarWars">StarWars</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="numNoches">Número de Noches:</label>
-                    <input type="number" id="numNoches" class="form-control" min="1" required>
-                </div>
-                <div class="form-group">
-                    <label for="numPersonas">Número de Personas:</label>
-                    <input type="number" id="numPersonas" class="form-control" min="1" required>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="desayuno">
-                    <label for="desayuno">Agregar Desayuno ($5,000 por noche)</label>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="cena">
-                    <label for="cena">Agregar Cena ($10,000 por noche)</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Calcular Costo</button>
-            </form>
-        
-            <section id="resultado-section">
-                <h2>Última Reserva Realizada</h2>
-                <div id="ultimaReserva"></div>
-            </section>
-        
-            <section id="reservasAnteriores">
-                <h2>Reservas Anteriores</h2>
-                <ul id="listaReservas"></ul>
-                <button id="eliminarReservas" class="btn btn-danger">Eliminar Todas las Reservas</button>
-            </section>
-        </main>
+        <section id="reservasAnteriores">
+            <h2>Reservas Anteriores</h2>
+            <ul id="listaReservas"></ul>
+            <button id="eliminarReservas" class="btn btn-danger">Eliminar Todas las Reservas</button>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Epic Quest Resort. Todos los derechos reservados.</p>
